@@ -1,0 +1,92 @@
+{
+  "name": "KubeCon + CloudNativeCon North America 2026",
+  "shortName": "KubeCon NA 2026",
+  "city": "Salt Lake City, Utah",
+  "venue": "Salt Palace Convention Center",
+  "timezone": "America/Denver",
+  "utcOffset": "-07:00",
+  "tagline": "The Cloud Native Computing Foundation's flagship conference: maintainers, end users and builders of Kubernetes and the cloud native ecosystem.",
+  "about": "Talks, tutorials, maintainer sessions and hallway conversations about Kubernetes, AI inference and agents, platform engineering, observability and cloud native security. Co-located events run on Monday; the main conference runs Tuesday to Thursday.",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-11-10",
+      "label": "Tue, Nov 10"
+    },
+    {
+      "day": 2,
+      "date": "2026-11-11",
+      "label": "Wed, Nov 11"
+    },
+    {
+      "day": 3,
+      "date": "2026-11-12",
+      "label": "Thu, Nov 12"
+    }
+  ],
+  "dayStart": "08:00",
+  "dayEnd": "19:30",
+  "topics": [
+    {
+      "id": "agentic",
+      "label": "AI Inference + Agentic",
+      "color": "#d946ef",
+      "blurb": "Serving models at scale, LLM gateways, GPUs and agentic systems running on cloud native infrastructure."
+    },
+    {
+      "id": "platform",
+      "label": "Platform Engineering",
+      "color": "#f97316",
+      "blurb": "Internal developer platforms, golden paths, GitOps and self-service infrastructure."
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "color": "#ef4444",
+      "blurb": "Supply chain, runtime security, policy as code, identity and zero trust."
+    },
+    {
+      "id": "observability",
+      "label": "Observability",
+      "color": "#eab308",
+      "blurb": "OpenTelemetry, metrics, logs, traces, profiling and SLOs."
+    },
+    {
+      "id": "ops",
+      "label": "Operations + Performance",
+      "color": "#22c55e",
+      "blurb": "Running clusters at scale: upgrades, autoscaling, scheduling, reliability and cost."
+    },
+    {
+      "id": "connectivity",
+      "label": "Connectivity",
+      "color": "#06b6d4",
+      "blurb": "Networking, service mesh, Gateway API, eBPF and multi-cluster traffic."
+    },
+    {
+      "id": "data",
+      "label": "Data Processing + Storage",
+      "color": "#3b82f6",
+      "blurb": "Stateful workloads, databases on Kubernetes, storage, streaming and batch."
+    },
+    {
+      "id": "appdev",
+      "label": "Application Development + Delivery",
+      "color": "#6366f1",
+      "blurb": "Developer experience, delivery pipelines, WebAssembly and building cloud native apps."
+    },
+    {
+      "id": "experience",
+      "label": "Cloud Native Experience",
+      "color": "#8b5cf6",
+      "blurb": "Community, contributing, careers, getting started and inclusion in cloud native."
+    },
+    {
+      "id": "emerging",
+      "label": "Emerging + Advanced",
+      "color": "#64748b",
+      "blurb": "Edge, sustainability, new projects and deep technical frontiers."
+    }
+  ],
+  "source": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/"
+}

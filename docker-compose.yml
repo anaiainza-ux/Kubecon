@@ -1,0 +1,27 @@
+services:
+  elasticsearch:
+    image: elasticsearch:9.5.3
+    container_name: kubecon-es
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.license.self_generated.type=trial
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  # Optional: browse indices at http://localhost:5601  (docker compose --profile kibana up -d)
+  kibana:
+    image: kibana:9.5.3
+    profiles: ["kibana"]
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
+volumes:
+  esdata:

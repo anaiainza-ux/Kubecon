@@ -1,0 +1,375 @@
+{
+  "note": "Approximate layout of the Salt Palace Convention Center and Hyatt Regency for the prototype. Walking times (minutes) and room capacities are estimates.",
+  "entrance": "entrance",
+  "floorChangeMinutes": 2,
+  "bufferMinutes": 2,
+  "offsiteMinutes": 15,
+  "zones": [
+    {
+      "id": "entrance",
+      "label": "South Entrance",
+      "x": 50,
+      "y": 90
+    },
+    {
+      "id": "sp-ballrooms",
+      "label": "Grand Ballrooms (L1)",
+      "x": 22,
+      "y": 62
+    },
+    {
+      "id": "sp-halls",
+      "label": "Exhibit Halls (L1)",
+      "x": 50,
+      "y": 38
+    },
+    {
+      "id": "sp-250",
+      "label": "Rooms 250–254 (L2)",
+      "x": 22,
+      "y": 20
+    },
+    {
+      "id": "sp-255",
+      "label": "Rooms 255 (L2)",
+      "x": 78,
+      "y": 20
+    },
+    {
+      "id": "hyatt",
+      "label": "Hyatt Regency",
+      "x": 82,
+      "y": 66
+    },
+    {
+      "id": "offsite",
+      "label": "Off-site",
+      "x": 92,
+      "y": 92
+    }
+  ],
+  "walk": {
+    "entrance": {
+      "entrance": 1,
+      "sp-ballrooms": 3,
+      "sp-halls": 4,
+      "sp-250": 4,
+      "sp-255": 5,
+      "hyatt": 6,
+      "offsite": 15
+    },
+    "sp-ballrooms": {
+      "entrance": 3,
+      "sp-ballrooms": 1,
+      "sp-halls": 4,
+      "sp-250": 3,
+      "sp-255": 4,
+      "hyatt": 6,
+      "offsite": 15
+    },
+    "sp-halls": {
+      "entrance": 4,
+      "sp-ballrooms": 4,
+      "sp-halls": 2,
+      "sp-250": 5,
+      "sp-255": 5,
+      "hyatt": 8,
+      "offsite": 15
+    },
+    "sp-250": {
+      "entrance": 4,
+      "sp-ballrooms": 3,
+      "sp-halls": 5,
+      "sp-250": 1,
+      "sp-255": 3,
+      "hyatt": 7,
+      "offsite": 15
+    },
+    "sp-255": {
+      "entrance": 5,
+      "sp-ballrooms": 4,
+      "sp-halls": 5,
+      "sp-250": 3,
+      "sp-255": 1,
+      "hyatt": 7,
+      "offsite": 15
+    },
+    "hyatt": {
+      "entrance": 6,
+      "sp-ballrooms": 6,
+      "sp-halls": 8,
+      "sp-250": 7,
+      "sp-255": 7,
+      "hyatt": 2,
+      "offsite": 15
+    },
+    "offsite": {
+      "entrance": 15,
+      "sp-ballrooms": 15,
+      "sp-halls": 15,
+      "sp-250": 15,
+      "sp-255": 15,
+      "hyatt": 15,
+      "offsite": 15
+    }
+  },
+  "paths": [
+    {
+      "a": "entrance",
+      "b": "sp-ballrooms",
+      "text": "From the South Entrance, follow signs to the Grand Ballrooms"
+    },
+    {
+      "a": "entrance",
+      "b": "sp-halls",
+      "text": "From the South Entrance, follow signs to the Exhibit Halls"
+    },
+    {
+      "a": "entrance",
+      "b": "hyatt",
+      "text": "Exit towards the Hyatt Regency next door"
+    },
+    {
+      "a": "sp-ballrooms",
+      "b": "sp-halls",
+      "text": "Walk along the Level 1 concourse from the Grand Ballrooms to the Exhibit Halls"
+    },
+    {
+      "a": "sp-ballrooms",
+      "b": "sp-250",
+      "text": "Take the concourse past the Grand Ballrooms towards the 250 rooms"
+    },
+    {
+      "a": "sp-250",
+      "b": "sp-255",
+      "text": "Continue along the Level 2 concourse to the 255 rooms"
+    },
+    {
+      "a": "sp-halls",
+      "b": "sp-255",
+      "text": "From the Exhibit Halls, head to the 255 rooms"
+    },
+    {
+      "a": "sp-ballrooms",
+      "b": "hyatt",
+      "text": "Head out to the Hyatt Regency next door"
+    },
+    {
+      "a": "entrance",
+      "b": "offsite",
+      "text": "Leave the venue"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "sp-level-2-upper-mezzanine",
+      "name": "Upper Mezzanine",
+      "zone": "entrance",
+      "floor": 2,
+      "capacity": 100
+    },
+    {
+      "id": "hyatt-level-5-capitol-reef",
+      "name": "Capitol Reef (Hyatt)",
+      "zone": "hyatt",
+      "floor": 5,
+      "capacity": 100
+    },
+    {
+      "id": "hyatt-level-4-regency-ballroom-a",
+      "name": "Regency Ballroom A (Hyatt)",
+      "zone": "hyatt",
+      "floor": 4,
+      "capacity": 350
+    },
+    {
+      "id": "hyatt-level-4-regency-ballroom-b",
+      "name": "Regency Ballroom B (Hyatt)",
+      "zone": "hyatt",
+      "floor": 4,
+      "capacity": 350
+    },
+    {
+      "id": "hyatt-level-4-regency-ballroom-cd",
+      "name": "Regency Ballroom CD (Hyatt)",
+      "zone": "hyatt",
+      "floor": 4,
+      "capacity": 500
+    },
+    {
+      "id": "hyatt-level-2-salt-lake-ballroom-c",
+      "name": "Salt Lake Ballroom C (Hyatt)",
+      "zone": "hyatt",
+      "floor": 2,
+      "capacity": 350
+    },
+    {
+      "id": "hyatt-level-2-salt-lake-ballroom-de",
+      "name": "Salt Lake Ballroom DE (Hyatt)",
+      "zone": "hyatt",
+      "floor": 2,
+      "capacity": 500
+    },
+    {
+      "id": "sp-level-2-250-a-c",
+      "name": "250 A-C",
+      "zone": "sp-250",
+      "floor": 2,
+      "capacity": 700
+    },
+    {
+      "id": "sp-level-2-250-d-f",
+      "name": "250 D-F",
+      "zone": "sp-250",
+      "floor": 2,
+      "capacity": 500
+    },
+    {
+      "id": "sp-level-2-251-a-c",
+      "name": "251 A-C",
+      "zone": "sp-250",
+      "floor": 2,
+      "capacity": 350
+    },
+    {
+      "id": "sp-level-2-251-d-f",
+      "name": "251 D-F",
+      "zone": "sp-250",
+      "floor": 2,
+      "capacity": 350
+    },
+    {
+      "id": "sp-level-2-254",
+      "name": "254",
+      "zone": "sp-250",
+      "floor": 2,
+      "capacity": 250
+    },
+    {
+      "id": "sp-level-2-255-a",
+      "name": "255 A",
+      "zone": "sp-255",
+      "floor": 2,
+      "capacity": 150
+    },
+    {
+      "id": "sp-level-2-255-bc",
+      "name": "255 BC",
+      "zone": "sp-255",
+      "floor": 2,
+      "capacity": 350
+    },
+    {
+      "id": "sp-level-2-255-d",
+      "name": "255 D",
+      "zone": "sp-255",
+      "floor": 2,
+      "capacity": 150
+    },
+    {
+      "id": "sp-level-2-255-ef",
+      "name": "255 EF",
+      "zone": "sp-255",
+      "floor": 2,
+      "capacity": 350
+    },
+    {
+      "id": "sp-level-1-151",
+      "name": "151",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 350
+    },
+    {
+      "id": "sp-level-1-grand-ballroom-ace",
+      "name": "Grand Ballroom ACE",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 1200
+    },
+    {
+      "id": "sp-level-1-grand-ballroom-bdf",
+      "name": "Grand Ballroom BDF",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 1200
+    },
+    {
+      "id": "sp-level-1-grand-ballroom-gi",
+      "name": "Grand Ballroom GI",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 800
+    },
+    {
+      "id": "sp-level-1-grand-ballroom-h",
+      "name": "Grand Ballroom H",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 800
+    },
+    {
+      "id": "sp-level-1-grand-ballroom-j",
+      "name": "Grand Ballroom J",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 800
+    },
+    {
+      "id": "sp-level-1-north-grand-ballroom-foyer",
+      "name": "North Grand Ballroom Foyer",
+      "zone": "sp-ballrooms",
+      "floor": 1,
+      "capacity": 800
+    },
+    {
+      "id": "sp-level-1-hall-de",
+      "name": "Hall DE",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 8000
+    },
+    {
+      "id": "sp-level-1-halls-a-c-halls-1-5",
+      "name": "Halls A-C, Halls 1-5",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 5000
+    },
+    {
+      "id": "sp-level-1-solutions-showcase-hall-1-alpine-overlook-zone-demo-theater",
+      "name": "Solutions Showcase · Hall 1 · Demo Theater",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 120
+    },
+    {
+      "id": "sp-level-1-solutions-showcase-hall-1-alpine-overlook-zone-network-nook",
+      "name": "Solutions Showcase · Hall 1 · Network Nook",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 120
+    },
+    {
+      "id": "sp-level-1-solutions-showcase-hall-5-cosmic-canyon-zone-project-pavilion",
+      "name": "Solutions Showcase · Hall 5 · Project Pavilion",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 300
+    },
+    {
+      "id": "sp-level-1-solutions-showcase-hall-b-starlight-summit-zone",
+      "name": "Solutions Showcase · Hall B",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 120
+    },
+    {
+      "id": "sp-level-1-solutions-showcase-halls-5-cosmic-canyon-zone",
+      "name": "Solutions Showcase · Halls 5",
+      "zone": "sp-halls",
+      "floor": 1,
+      "capacity": 120
+    }
+  ]
+}
